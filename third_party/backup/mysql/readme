@@ -1,0 +1,14 @@
+sudo yum install libaio-devel
+sudo yum install ncurses-devel   //if no ncurses-devel
+
+tar -xvf mysql-5.7.14.tar.gz
+
+cd mysql-5.7.14
+
+mkdir bld
+
+cd bld
+
+cmake .. -DBUILD_CONFIG=mysql_release
+
+make
