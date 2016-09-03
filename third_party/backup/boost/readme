@@ -6,4 +6,6 @@ cd boost_1_59_0
 
 ./b2
 
-sudo ./b2 install --prefix=/usr/local
+sudo ./b2 install --prefix=`pwd`/bld
+
+export PATH=`pwd`/bld/bin
